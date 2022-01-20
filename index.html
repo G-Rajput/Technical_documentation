@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial;
+        padding: 10px;
+        background: #f1f1f1;
+      }
+
+      /* Header/Blog Title */
+      .header {
+        padding: 30px;
+        text-align: center;
+        background: white;
+      }
+
+      .header h1 {
+        font-size: 50px;
+      }
+
+      /* Style the top navigation bar */
+      .topnav {
+        overflow: hidden;
+        background-color: #333;
+      }
+
+      /* Style the topnav links */
+      .topnav a {
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+
+      /* Change color on hover */
+      .topnav a:hover {
+        background-color: #ddd;
+        color: black;
+      }
+
+      /* Create two unequal columns that floats next to each other */
+      /* Left column */
+      .leftcolumn {
+        float: left;
+        width: 25%;
+      }
+
+      /* Right column */
+      .rightcolumn {
+        float: left;
+        width: 75%;
+        background-color: #f1f1f1;
+        padding-left: 20px;
+      }
+
+      /* Fake image */
+      .fakeimg {
+        background-color: #aaa;
+        width: 100%;
+        padding: 20px;
+      }
+
+      /* Add a card effect for articles */
+      .card {
+        background-color: white;
+        padding: 20px;
+        margin-top: 20px;
+      }
+
+      /* Clear floats after the columns */
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      /* Footer */
+      .footer {
+        padding: 20px;
+        text-align: center;
+        background: #ddd;
+        margin-top: 20px;
+      }
+
+      /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+      @media screen and (max-width: 800px) {
+        .leftcolumn, .rightcolumn {
+          width: 100%;
+          padding: 0;
+        }
+      }
+
+      /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+      @media screen and (max-width: 400px) {
+        .topnav a {
+          float: none;
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+
+    <div class="row">
+      <div class="leftcolumn">
+        <div class="card">
+          <nav class="topnav" id="navbar">
+            <header></header>
+
+            <a href="#Sit_in_Car" class="nav-link">
+              Sit in Car
+            </a>
+            <a href="#Clear_Glass" class="nav-link">
+              Clear Glass
+            </a>
+            <a href="#Turn_on_Ignition" class="nav-link">
+              Turn on Ignition
+            </a>
+            <a href="#Press_Ignition_Button" class="nav-link">
+              Press Ignition Button
+            </a>
+            <a href="#Drive_Car" class="nav-link">
+              Drive Car
+            </a>
+          </nav>
+        </div>
+      </div>
+      <div class="rightcolumn">
+
+        <div class="header">
+          <h1>How to Start a Car</h1>
+        </div>
+        <main id="main-doc">
+
+          <div class="card">
+            <section class="main-section" id="Sit_in_Car">
+              <header>Sit in Car</header>
+              <code>First do a Saftey Check</code>
+              <ol>
+                <li>Is your beltsheat on?</li>
+                <li>Are you wearing proper cloth?</li>
+                <li>Do you have closed toed shoes on?</li>
+                <li>How are the weather conditions?</li>
+                <li>Is the car in good order?</li>
+              </ol>
+              <p>When you first sit in a car it's a good idea to take a moment and think about your surroundings.</p>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe temporibus ipsam nisi vitae laboriosam suscipit id expedita natus recusandae? Eligendi eum dolor, iste ullam recusandae.</p>
+            </section>
+          </div>
+          <div class="card">
+            <section class="main-section" id="Clear_Glass">
+              <header>Clear Glass</header>
+              <code>Front glass provide the safetey from front end problem  </code>
+              <p>Most modern car depend on you to clear the glass before you can start the car.</p>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo facere magnam repellendus vitae itaque tenetur temporibus voluptatum omnis, aliquid reiciendis tempora voluptatibus earum harum labor.</p>
+            </section>
+          </div>
+          <div class="card">
+            <section class="main-section"  id="Turn_on_Ignition">
+              <header>Turn on Ignition</header>
+              <code>Use your car key to turn on ignition.</code>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum exercitationem neque accusamus perspiciatis eaque cupiditate, inventore esse dicta culpa ab quibusdam, deleniti perferendis. Fugit, vitae! Voluptas provident sunt mollitia repellat.</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae quisquam tempora iure, ad esse quasi exercitationem obcaecati labore molestiae nobis hic dolor ratione neque iusto. Saepe quae voluptatem placeat impedit!</p>
+            </section>
+          </div>
+          <div class="card">
+            <section class="main-section"  id="Press_Ignition_Button">
+              <header>Press Ignition Button</header>
+              <code>Some old car don't have an igntion button.</code>
+              <p>If you don't have an ignition button, use the people push the car.</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil animi earum cumque quos. Velit fugit esse repudiandae reiciendis est magnam explicabo, quos blanditiis officia aliquam nisi consectetur animi, necessitatibus illum?</p>
+            </section>
+          </div>
+          <div class="card">
+            <section class="main-section" id="Drive_Car">
+              <header>Drive Car</header>
+              <code>The best part.</code>
+              <p>Enjoy a safe car ride..</p>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit illo placeat quos est laudantium eos itaque, consequuntur veritatis minima repellat blanditiis impedit repellendus vitae quod rem.</p>
+            </section>
+          </div>
+        </main>
+      </div>
+    </div>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>
